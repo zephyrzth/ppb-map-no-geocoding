@@ -4,11 +4,96 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/editTextCari1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kelurahan"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/btnCari1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cari"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linearLayout1">
+
+        <EditText
+            android:id="@+id/editTextCari2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kelurahan"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/btnCari2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cari"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textViewJarak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.0 km"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginEnd="30dp"/>
+
+        <Button
+            android:id="@+id/btnJarak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hitung Jarak"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
     <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MapsActivity" />
+        tools:context=".MapsActivity"
+        android:layout_below="@id/linearLayout3"/>
 
 </RelativeLayout>
