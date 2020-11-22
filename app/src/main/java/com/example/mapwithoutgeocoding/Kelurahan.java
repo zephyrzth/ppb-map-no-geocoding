@@ -1,13 +1,14 @@
 package com.example.mapwithoutgeocoding;
 
 public class Kelurahan {
-    private String nama;
+    private String nama, soundex;
     private Double latitude, longitude;
 
-    public Kelurahan(String nama, Double latitude, Double longitude) {
+    public Kelurahan(String nama, Double latitude, Double longitude, String soundex) {
         this.nama = nama;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.soundex = soundex;
     }
     public Kelurahan() {
 
@@ -22,6 +23,9 @@ public class Kelurahan {
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
+    public void setSoundex(String soundex) {
+        this.soundex = soundex;
+    }
 
     public String getNama() {
         return nama;
@@ -31,5 +35,8 @@ public class Kelurahan {
     }
     public Double getLongitude() {
         return longitude;
+    }
+    public String getSoundex() {
+        return soundex;
     }
 }

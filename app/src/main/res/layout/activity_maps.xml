@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="25dp">
 
         <EditText
             android:id="@+id/editTextCari1"
@@ -66,25 +66,25 @@
         android:layout_below="@id/linearLayout2"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp">
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp">
 
         <TextView
             android:id="@+id/textViewJarak"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="0.0 km"
-            android:layout_weight="1"
-            android:textAlignment="center"
+            android:text="Jarak: 0.0 km"
             android:textStyle="bold"
             android:textSize="22sp"
-            android:layout_marginEnd="30dp"/>
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/btnJarak"
+            android:id="@+id/btnImport"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Hitung Jarak"
+            android:layout_below="@id/linearLayout3"
+            android:text="Import CSV"
             android:layout_weight="1"/>
     </LinearLayout>
 
